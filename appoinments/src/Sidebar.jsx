@@ -87,7 +87,7 @@ const Sidebar = ({ isCollapsed, setIsCollapsed, setActivePage }) => {
       </div>
 
       {/* Footer Button */}
-      <div className="bg-blue-600 text-white text-center p-2 pb-6 pt-4">
+      <div className="bg-blue-600 text-white text-center p-3 pb-5">
         <button className="w-full text-base flex items-center justify-center">
           <FontAwesomeIcon icon={faHeadset} className="w-2 h-2 mr-2" />
           {!(isCollapsed || isMobile) && "Request For Training"}
