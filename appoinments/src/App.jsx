@@ -1,11 +1,13 @@
 import React from "react";
 import Appoinments from "./Appoinments";
 import Header from "./Header";
+import Sidebar from "./sidebar";
 
 const App = () => {
   return (
     <>
-      <Header />
+      <Sidebar />
+      <Header/>
       <Appoinments />
     </>
   );

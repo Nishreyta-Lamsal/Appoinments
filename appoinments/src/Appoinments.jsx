@@ -17,10 +17,10 @@ const Appointments = () => {
 
   return (
     <div className="bg-[#f7f9f7] w-screen h-screen mt-[4rem]">
-      <div className="font-bold text-gray-600 ml-14">
+      <div className="font-bold text-gray-600 ml-52">
         Appointments ({activeSection})
       </div>
-      <div className="bg-blue-100 px-3 py-2 mt-2 mx-14">
+      <div className="bg-blue-100 px-3 py-2 mt-2 mx-14 ml-52">
         <div className="flex justify-end gap-3 text-sm text-gray-700">
           {/* Add additional sections here if needed */}
           <p
@@ -90,10 +90,10 @@ const Appointments = () => {
       </div>
       <div className="flex items-center gap-80 ">
         <div className="mr-[14rem]">
-          <i className="absolute fa-solid fa-magnifying-glass text-gray-500 ml-16 mt-[1.9rem]"></i>
+          <i className="absolute fa-solid fa-magnifying-glass text-gray-500 ml-56 mt-[1.9rem]"></i>
           <input
             placeholder="Appointment"
-            className="mt-4 ml-[3.5rem] pr-96 pl-9 py-2 border outline-blue-500"
+            className="mt-4 ml-[13rem] pr-96 pl-9 py-2 border outline-blue-500"
           />
           <button className="py-3 pt-3.5 px-4 ml-3 bg-blue-600 text-white rounded-md text-xs">
             Search
@@ -101,7 +101,7 @@ const Appointments = () => {
         </div>
 
         {/* List and Calendar buttons */}
-        <div className="flex gap-3 ml-12 text-center border px-1 py-1 rounded-lg text-gray-400 text-xs">
+        <div className="flex gap-3 -ml-[6.4rem] text-center border px-1 py-1 rounded-lg text-gray-400 text-xs">
           <button
             onClick={() => handleSectionClick("list")}
             className={`py-2 px-4 rounded-lg ${
@@ -122,13 +122,13 @@ const Appointments = () => {
       </div>
 
       {/* Section Content */}
-      <div className="absolute border ml-14 mt-5 mr-[3.5rem]">
+      <div className="absolute border ml-52 mt-5">
         {activeSection === "list" && (
           <div>
-            <div className="flex justify-start flex-wrap bg-[#f9faf9] mt-3 px-3 gap-20 font-medium text-sm text-gray-700 mb-3">
+            <div className="flex justify-start flex-wrap bg-[#f9faf9] mt-3 px-3 gap-[4.2rem] font-medium text-sm text-gray-700 mb-3">
               <p>
                 Name
-                <i className="fa-solid fa-caret-down ml-1"></i>
+                <i className="fa-solid fa-caret-down ml-1 pl-3"></i>
               </p>
               <p>
                 Type
@@ -164,7 +164,7 @@ const Appointments = () => {
               </p>
               <p>
                 Action
-                <i className="fa-solid fa-caret-down ml-1"></i>
+                <i className="fa-solid fa-caret-down ml-1 pr-2"></i>
               </p>
             </div>
             <div className="bg-white text-sm flex justify-center">
@@ -174,7 +174,7 @@ const Appointments = () => {
         )}
       </div>
 
-      <div className="bg-white text-xs  w-[92.5%] ml-[3.6rem] mr-[4rem] ">
+      <div className="bg-white text-xs  w-[83%] ml-[13rem] mr-[4rem] ">
         {/* Calendar Section */}
         {activeSection === "calendar" && (
           <div className="bg-white mt-5">
